@@ -44,7 +44,7 @@ object ConfigUtil {
             autocompleteAdvancedAccessToken = UserLevelConfig.getAutocompleteAccessToken(),
             debug = isCodyDebugEnabled(),
             verboseDebug = isCodyVerboseDebugEnabled(),
-            codebase = codyAgentCodebase?.getUrl(),
+            codebase = codyAgentCodebase?.currentCodebase(),
         )
 
     UserLevelConfig.getAutocompleteProviderType()?.let {
